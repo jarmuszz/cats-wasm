@@ -9,6 +9,8 @@ val disciplineMunitVersion = "2.0-WASM"
 
 val munitVersion = "1.3.0-WASM"
 
+ThisBuild / resolvers += "central-snapshots" at "https://central.sonatype.com/repository/maven-snapshots/"
+
 val PrimaryJava = JavaSpec.temurin("8")
 val LTSJava = JavaSpec.temurin("17")
 val GraalVM = JavaSpec.graalvm("21")
