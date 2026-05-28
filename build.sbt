@@ -1,7 +1,7 @@
 ThisBuild / tlBaseVersion := "2.13"
 ThisBuild / version := "2.13-WASM"
 
-val scalaCheckVersion = "1.19-WASM"
+val scalaCheckVersion = "1.19.0"
 
 val disciplineVersion = "1.7-WASM"
 
