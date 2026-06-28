@@ -1,15 +1,15 @@
 ThisBuild / tlBaseVersion := "2.13"
 ThisBuild / version := "2.13-WASM"
 
-val scalaCheckVersion = "1.19.0"
+ThisBuild / resolvers += "central-snapshots" at "https://central.sonatype.com/repository/maven-snapshots/"
+
+val scalaCheckVersion = "1.19.0-66-3b1e58f-SNAPSHOT"
 
 val disciplineVersion = "1.7.0-110-7658404-SNAPSHOT"
 
 val disciplineMunitVersion = "2.0-WASM"
 
-val munitVersion = "1.3.0-WASM"
-
-ThisBuild / resolvers += "central-snapshots" at "https://central.sonatype.com/repository/maven-snapshots/"
+val munitVersion = "1.3.3-WASM"
 
 val PrimaryJava = JavaSpec.temurin("8")
 val LTSJava = JavaSpec.temurin("17")
@@ -19,7 +19,7 @@ ThisBuild / githubWorkflowJavaVersions := Seq(PrimaryJava, LTSJava, GraalVM)
 
 val Scala212 = "2.12.21"
 val Scala213 = "2.13.18"
-val Scala3 = "3.3.7"
+val Scala3 = "3.3.8"
 
 ThisBuild / crossScalaVersions := Seq(Scala212, Scala213, Scala3)
 ThisBuild / scalaVersion := Scala213
