@@ -5,11 +5,11 @@ ThisBuild / resolvers += "central-snapshots" at "https://central.sonatype.com/re
 
 val scalaCheckVersion = "1.19.0-66-3b1e58f-SNAPSHOT"
 
-val disciplineVersion = "1.7.0-110-7658404-SNAPSHOT"
+val disciplineVersion = "1.7-WASM"
 
 val disciplineMunitVersion = "2.0-WASM"
 
-val munitVersion = "1.3.3-WASM"
+val munitVersion = "1.3.5-WASM"
 
 val PrimaryJava = JavaSpec.temurin("8")
 val LTSJava = JavaSpec.temurin("17")
